@@ -3,6 +3,7 @@
     "rulesDirectory": ["."],
     "rules": {
         "max-line-length":  [120],
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
         "new-parens": true,
         "no-arg": true,
         "no-bitwise": true,
