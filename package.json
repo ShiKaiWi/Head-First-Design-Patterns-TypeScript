@@ -1,0 +1,19 @@
+{
+  "name": "head-first-design-patterns-typescript",
+  "version": "1.0.0",
+  "description": "An practice for Design Patterns using TypeScript.",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShiKaiWi/Head-First-Design-Patterns-TypeScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShiKaiWi/Head-First-Design-Patterns-TypeScript/issues"
+  },
+  "homepage": "https://github.com/ShiKaiWi/Head-First-Design-Patterns-TypeScript#readme"
+}

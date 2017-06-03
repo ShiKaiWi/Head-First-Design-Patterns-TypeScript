@@ -1,0 +1,23 @@
+{
+    "extends": "tslint:recommended",
+    "rulesDirectory": ["."],
+    "rules": {
+        "max-line-length":  [120],
+        "new-parens": true,
+        "no-arg": true,
+        "no-bitwise": true,
+        "no-conditional-assignment": true,
+        "no-consecutive-blank-lines":[true, 1],
+        "no-console": [
+                "debug",
+                "info",
+                "log",
+                "time",
+                "timeEnd",
+                "trace"
+            ]
+    },
+    "jsRules": {
+        "max-line-length": [120]
+    }
+}
