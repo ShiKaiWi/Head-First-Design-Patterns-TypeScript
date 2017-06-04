@@ -1,4 +1,4 @@
-import Database from "../Singleton/Database";
+import Database from "../../../Patterns/Singleton/Database/Database";
 
 describe("Singleton-Database", () => {
     let db1: Database;

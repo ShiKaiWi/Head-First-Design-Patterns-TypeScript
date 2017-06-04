@@ -4,8 +4,8 @@
   "description": "An practice for Design Patterns using TypeScript.",
   "main": "README.md",
   "scripts": {
-    "pretest": "tsc test/*Test.ts --module es6 --target es5",
-    "test": "mocha --compilers js:babel-core/register"
+    "pretest": "find test -name '*Test.ts' | xargs tsc --outdir dist --module es6 --target es5",
+    "test": "find dist/test -name '*Test.js' | xargs mocha --compilers js:babel-core/register --timeout 20000"
   },
   "repository": {
     "type": "git",
