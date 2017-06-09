@@ -4,7 +4,7 @@
   "description": "An practice for Design Patterns using TypeScript.",
   "main": "README.md",
   "scripts": {
-    "pretest": "find test -name '*Test.ts' | xargs tsc --outdir dist --module es6 --target es5",
+    "pretest": "find test -name '*Test.ts' | xargs tsc --outdir dist --module commonjs --target es5 --allowJs",
     "test": "find dist/test -name '*Test.js' | xargs mocha --compilers js:babel-core/register --timeout 20000"
   },
   "repository": {
@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/ShiKaiWi/Head-First-Design-Patterns-TypeScript#readme",
   "devDependencies": {
+    "@types/assert": "0.0.31",
     "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.29",
+    "@types/power-assert": "^1.4.29",
     "babel-core": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "mocha": "^3.4.2",
+    "power-assert": "^1.4.3",
     "typescript": "^2.3.4"
   }
 }
