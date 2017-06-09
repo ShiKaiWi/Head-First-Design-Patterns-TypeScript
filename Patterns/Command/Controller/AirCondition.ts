@@ -8,7 +8,7 @@ class AirCondition {
     public static STATE_OFF = STATE.OFF;
     public state: STATE;
 
-    constructor(){
+    constructor() {
         this.state = STATE.OFF;
     }
 
