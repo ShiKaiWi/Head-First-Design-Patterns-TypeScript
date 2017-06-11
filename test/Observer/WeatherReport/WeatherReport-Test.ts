@@ -8,6 +8,6 @@ describe("#Observer", () => {
         setTimeout(() => {
             console.log("waiting over");
             done();
-        }, 10000);
+        }, 1000);
     });
 });
