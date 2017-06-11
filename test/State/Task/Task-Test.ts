@@ -7,5 +7,6 @@ describe("#State-Task", () => {
         task.receiveSubmitResponse();
         task.receiveSuccessResponse();
         task.reset();
+        done();
     });
 });

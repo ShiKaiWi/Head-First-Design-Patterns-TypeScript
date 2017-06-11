@@ -10,6 +10,8 @@ class WeatherData implements IObservable {
     private _humidity: number;
     private _pressure: number;
     private _observers: IObserver[] = [];
+    private updateCount: number = 0;
+    private updateLimit: number = 4;
 
     private constructor() {
         this._temp = 28;
@@ -55,11 +57,15 @@ class WeatherData implements IObservable {
     }
 
     private _startAutoUpdate() {
+        if (this.updateCount > this.updateLimit) {
+            return;
+        }
         this._temp += this._computeRandomDelta(this._temp);
         this._pressure += this._computeRandomDelta(this._pressure);
         this._humidity += this._computeRandomDelta(this._humidity);
         this._observers.forEach((o) => o.update([this._temp, this._pressure, this._humidity]));
         setTimeout(() => this._startAutoUpdate(), 1500);
+        this.updateCount ++;
     }
 }
 
