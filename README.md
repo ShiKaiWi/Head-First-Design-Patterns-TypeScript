@@ -47,7 +47,6 @@ Dog dog = new Dog("Spot");
 dog.bark()
 ```
 看上去挺不错的，然后你要知道代码工程中，最常见的就是需求改变，比如，将这只狗变为猫？在这样的时候你该怎么办？
-
 你会说很简单啊，实现一个 Cat 的 class，实现 meow 方法，然后改代码：
 ```java
 <<<<<HEAD
@@ -64,7 +63,6 @@ dog.bark()
 现在我们看看如何使用，面向 Interface 编程来解决这个问题。
 
 记住：面向 Interface == 面向 Supertype
-
 因此我们首先先设计一个抽象类：
 ```java
 Abstract class Animal {
